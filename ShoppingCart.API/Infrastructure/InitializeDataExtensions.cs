@@ -53,6 +53,7 @@ namespace ShoppingCart.API.Infrastructure
                 {
                     new Product
                     {
+                        Id = ObjectId.GenerateNewId().ToString(),
                         Category = "Computer",
                         ProductName = "Apple Macbook Pro 13",
                         StockAmount = 5,
@@ -60,6 +61,7 @@ namespace ShoppingCart.API.Infrastructure
                     },
                     new Product
                     {
+                        Id = ObjectId.GenerateNewId().ToString(),
                         Category = "Computer",
                         ProductName = "Dell XPS 15",
                         StockAmount = 7,

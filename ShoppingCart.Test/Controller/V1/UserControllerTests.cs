@@ -48,7 +48,7 @@ namespace ShoppingCart.Test.Controller.V1
         }
 
         [Fact]
-        public virtual async Task Get_RefreshToken()
+        public virtual async Task Refresh_Token()
         {
             // Arrange
 
@@ -71,7 +71,7 @@ namespace ShoppingCart.Test.Controller.V1
         }
 
         [Fact]
-        public virtual async Task Get_RevokeToken()
+        public virtual async Task Revoke_Token()
         {
             // Arrange
 
@@ -112,7 +112,6 @@ namespace ShoppingCart.Test.Controller.V1
 
             // Deserialize and examine results.
             var stringResponse = await httpResponse.Content.ReadAsStringAsync();
-            //var userList = BsonSerializer.Deserialize<List<User>>(stringResponse);
             var userList = JsonConvert.DeserializeObject<List<User>>(stringResponse);
 
             //Assert

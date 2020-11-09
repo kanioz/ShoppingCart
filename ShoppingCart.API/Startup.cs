@@ -103,6 +103,7 @@ namespace ShoppingCart.API
             services.AddScoped(typeof(IMongoRepository<>), typeof(MongoRepository<>));
             services.AddScoped<IUserService, UserService>();
             services.AddTransient<IShoppingCartService, ShoppingCartService>();
+            services.AddTransient<IProductService, ProductService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

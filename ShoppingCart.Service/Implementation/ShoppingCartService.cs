@@ -121,6 +121,17 @@ namespace ShoppingCart.Service.Implementation
             return shoppingCart;
         }
 
+        public async Task<Core.Model.ShoppingCart> RemoveAllShoppingCartItemsAsync(string shoppingCartId)
+        {
+            var shoppingCart = await _repository.FindByIdAsync(shoppingCartId);
+            shoppingCart.ShoppingCartItems.Clear();
+            
+            CalculateTotalPrice(shoppingCart);
+            await _repository.ReplaceOneAsync(shoppingCart);
+
+            return shoppingCart;
+        }
+
         private void CalculateTotalPrice(Core.Model.ShoppingCart shoppingCart)
         {
             decimal total = 0;

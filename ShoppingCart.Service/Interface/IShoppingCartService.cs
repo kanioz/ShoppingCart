@@ -11,5 +11,6 @@ namespace ShoppingCart.Service.Interface
 
         Task<Core.Model.ShoppingCart> ChangeShoppingCartItemQuantityAsync(string shoppingCartId, string shoppingCartItemId, int quantity);
         Task<Core.Model.ShoppingCart> RemoveShoppingCartItemAsync(string shoppingCartId, string shoppingCartItemId);
+        Task<Core.Model.ShoppingCart> RemoveAllShoppingCartItemsAsync(string shoppingCartId);
     }
 }

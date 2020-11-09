@@ -100,5 +100,22 @@ namespace ShoppingCart.API.Controllers.V1
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
         }
+
+        [HttpPost("{id}/delete-all-items")]
+        public async Task<IActionResult> RemoveAllItemsFromShoppingCart(string id)
+        {
+            try
+            {
+                var shoppingCart = await _shoppingCartService.RemoveAllShoppingCartItemsAsync(id);
+                if (shoppingCart == null)
+                    return NotFound("Shopping Cart Item not found");
+                return Ok(shoppingCart);
+            }
+            catch (Exception ex)
+            {
+                base.LogError<ShoppingCartController>(ex);
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+        }
     }
 }
