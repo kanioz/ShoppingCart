@@ -22,7 +22,7 @@ namespace ShoppingCart.Test
                 services.RemoveAll(typeof(IDatabaseSettings));
 
                 var settings = new Mock<DatabaseSettings>();
-                settings.Object.ConnectionString = "mongodb://root:Password12345@localhost:27017";
+                settings.Object.ConnectionString = "mongodb://localhost:27017";
                 settings.Object.DatabaseName = "TestShoppingDB";
 
                 services.AddSingleton<IMock<IDatabaseSettings>>(settings);

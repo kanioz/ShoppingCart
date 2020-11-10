@@ -1,15 +1,14 @@
 ﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc.Testing;
 using ShoppingCart.API;
 using Xunit;
 
 namespace ShoppingCart.Test
 {
-    public class BasicTests : IClassFixture<WebApplicationFactory<Startup>>
+    public class BasicTests : IClassFixture<ShoppingCartApiFactory<Startup>>
     {
-        private readonly WebApplicationFactory<Startup> _factory;
+        private readonly ShoppingCartApiFactory<Startup> _factory;
 
-        public BasicTests(WebApplicationFactory<Startup> factory)
+        public BasicTests(ShoppingCartApiFactory<Startup> factory)
         {
             _factory = factory;
         }

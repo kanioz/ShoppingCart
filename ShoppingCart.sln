@@ -11,11 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart.Service", "Sho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart.Data", "ShoppingCart.Data\ShoppingCart.Data.csproj", "{71FFF0C8-D8B7-4767-9371-22F2BE036AAC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C98FD527-015D-415A-9CAA-2B5A37611520}"
-	ProjectSection(SolutionItems) = preProject
-		docker-compose.yml = docker-compose.yml
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{53C4F985-D542-40E9-92B5-14474D80B349}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{576B90E3-8156-4DD6-B094-F28DDAC547ED}"
@@ -23,6 +18,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B9D03969-2769-453B-9BCF-94571FFCA15A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart.Core", "ShoppingCart.Core\ShoppingCart.Core.csproj", "{D8297BDB-FBF7-4DA5-B9F0-D60DF938DD93}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{94650068-3ABD-4DD0-844C-C3ED0D0149CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +47,10 @@ Global
 		{D8297BDB-FBF7-4DA5-B9F0-D60DF938DD93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8297BDB-FBF7-4DA5-B9F0-D60DF938DD93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8297BDB-FBF7-4DA5-B9F0-D60DF938DD93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94650068-3ABD-4DD0-844C-C3ED0D0149CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94650068-3ABD-4DD0-844C-C3ED0D0149CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94650068-3ABD-4DD0-844C-C3ED0D0149CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94650068-3ABD-4DD0-844C-C3ED0D0149CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

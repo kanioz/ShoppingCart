@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ShoppingCart.Test": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
