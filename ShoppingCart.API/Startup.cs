@@ -39,9 +39,7 @@ namespace ShoppingCart.API
                 {
                     options.JsonSerializerOptions.IgnoreNullValues = true;
                 });
-            services.AddControllers();
 
-            services.AddControllers();
 
             services.AddSwaggerGen(c =>
             {

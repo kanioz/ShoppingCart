@@ -28,11 +28,8 @@ namespace ShoppingCart.Test
                 services.AddSingleton<IMock<IDatabaseSettings>>(settings);
                 services.AddScoped(typeof(IShoppingDbContext), typeof(ShoppingTestDbContext));
 
-                // Build the service provider.
                 var sp = services.BuildServiceProvider();
 
-                // Create a scope to obtain a reference to the database
-                // context (ApplicationDbContext).
                 using var scope = sp.CreateScope();
                 var scopedServices = scope.ServiceProvider;
                 var db = scopedServices.GetRequiredService<IShoppingDbContext>();
@@ -46,8 +43,7 @@ namespace ShoppingCart.Test
                 }
                 catch (Exception ex)
                 {
-                    logger.LogError(ex, "An error occurred seeding the " +
-                                        "database with test messages. Error: {Message}", ex.Message);
+                    logger.LogError(ex, "An error occurred seeding the database with test messages. Error: {Message}", ex.Message);
                 }
             });
         }

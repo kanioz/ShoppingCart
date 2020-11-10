@@ -7,6 +7,7 @@ namespace ShoppingCart.Core.Model
         public string ProductId { get; set; }
         public int Quantity { get; set; }
         public decimal ItemTotalPrice { get; set; }
-        public Product Product { get; set; }
+        public string ProductName { get; set; }
+        public decimal Price { get; set; }
     }
 }
